@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 36560423}
   - component: {fileID: 36560427}
   - component: {fileID: 36560426}
+  - component: {fileID: 36560425}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -198,12 +199,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36560422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.56822, y: 8.26, z: 0}
+  m_LocalPosition: {x: 4.31, y: 0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36560425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36560422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4572fc823b57d4b909492dc005148f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddle1: {fileID: 119409254}
+  launchBallX: 15
+  launchBallY: 15
 --- !u!50 &36560426
 Rigidbody2D:
   serializedVersion: 4
@@ -219,7 +235,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -252,6 +268,7 @@ GameObject:
   - component: {fileID: 119409252}
   - component: {fileID: 119409251}
   - component: {fileID: 119409253}
+  - component: {fileID: 119409254}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -317,7 +334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119409250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.3, y: 0.21, z: 0}
+  m_LocalPosition: {x: 4.3, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -355,6 +372,21 @@ PolygonCollider2D:
       - {x: 0.85333335, y: -0.21333334}
       - {x: 0.8363123, y: 0.037304178}
       - {x: 0.69525623, y: 0.10708831}
+--- !u!114 &119409254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119409250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202cb2e9f571f3840a5e52c69c185d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWidthInUnits: 16
+  xMin: 1
+  xMax: 15
 --- !u!1 &161613365
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &161613366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -496,7 +528,7 @@ GameObject:
   - component: {fileID: 290301209}
   - component: {fileID: 290301208}
   m_Layer: 0
-  m_Name: Lose Collider (1)
+  m_Name: Lose Collider LeftSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -566,7 +598,7 @@ GameObject:
   - component: {fileID: 455714512}
   - component: {fileID: 455714511}
   m_Layer: 0
-  m_Name: Lose Collider (2)
+  m_Name: Lose Collider RightSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -954,7 +986,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 755896234}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3d2f6dcb8db4c07429300d1d2571d17f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -982,7 +1014,7 @@ GameObject:
   - component: {fileID: 1056161079}
   - component: {fileID: 1056161078}
   m_Layer: 0
-  m_Name: Bounce Collider (2)
+  m_Name: Top Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,7 +1071,7 @@ GameObject:
   - component: {fileID: 1060118784}
   - component: {fileID: 1060118783}
   m_Layer: 0
-  m_Name: Bounce Collider (1)
+  m_Name: Left Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1228,7 +1260,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606279408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -1403,7 +1435,7 @@ GameObject:
   - component: {fileID: 1785734733}
   - component: {fileID: 1785734732}
   m_Layer: 0
-  m_Name: Bounce Collider (3)
+  m_Name: Right Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
