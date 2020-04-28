@@ -8,6 +8,8 @@ public class Ball : MonoBehaviour
     [SerializeField] Paddle paddle1;
     [SerializeField] float launchBallX = 2f;
     [SerializeField] float launchBallY = 15f;
+    [SerializeField] AudioClip bounceSound;
+    [SerializeField] AudioSource bounceSource;
 
     Vector2 paddleToBallVector;
     bool hasStarted = false;
@@ -38,5 +40,13 @@ public class Ball : MonoBehaviour
     {
         Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
         transform.position = paddlePos + paddleToBallVector;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bounce"))
+        {
+            bounceSource.PlayOneShot(bounceSound);
+        }
+        
     }
 }

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5180251158249972867}
   - component: {fileID: 5180251158249972864}
   m_Layer: 0
-  m_Name: Block
-  m_TagString: Untagged
+  m_Name: LargeBlock
+  m_TagString: Bounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
