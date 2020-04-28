@@ -43,7 +43,7 @@ public class Ball : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Bounce"))
+        if (collision.gameObject.CompareTag("Bounce")&& hasStarted)
         {
             bounceSource.PlayOneShot(bounceSound);
         }
