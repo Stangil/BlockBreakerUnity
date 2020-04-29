@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 0}

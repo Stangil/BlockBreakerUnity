@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -191,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -271,6 +276,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,7 +344,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -351,6 +361,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -414,7 +429,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -470,6 +485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &104087665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -592,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &187408698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -744,6 +761,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -807,7 +829,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -952,6 +974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &246777605
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1074,6 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &267653612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1265,6 +1289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &318974762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1427,6 +1452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallBlock (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3822840336716963124, guid: c386d3c0d492f7c4f9f2a76fba5cbdc5,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 3822840336716963126, guid: c386d3c0d492f7c4f9f2a76fba5cbdc5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1491,6 +1521,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1566,6 +1601,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1629,7 +1669,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -1679,6 +1719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &530151918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1801,6 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &533655112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2078,6 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &867522274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2200,6 +2243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &903670741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2371,6 +2415,73 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 917373930}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &948041364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_Name
+      value: Impact VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+--- !u!1 &948041365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c,
+    type: 3}
+  m_PrefabInstance: {fileID: 948041364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036683157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,6 +2528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &1036683160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2539,6 +2651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &1057213532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2667,6 +2780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &1099998722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2902,6 +3016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &1354970203
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2993,7 +3108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1384628583
 Transform:
   m_ObjectHideFlags: 0
@@ -3033,6 +3148,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3096,7 +3216,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -3186,6 +3306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &1580106106
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3269,6 +3390,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3332,7 +3458,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -3444,6 +3570,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3507,7 +3638,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -3564,6 +3695,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730904945}
     m_Modifications:
+    - target: {fileID: 5180251158249972864, guid: e1df686a442106f409f67c41c6b4c2fc,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 5180251158249972866, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3627,7 +3763,7 @@ PrefabInstance:
     - target: {fileID: 5180251158249972868, guid: e1df686a442106f409f67c41c6b4c2fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1df686a442106f409f67c41c6b4c2fc, type: 3}
@@ -3689,6 +3825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &1837280865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3817,6 +3954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClipBreak: {fileID: 8300000, guid: e52e79d57c9e7534fbce9cdc9b4e5a95, type: 3}
+  blockBreakerVFX: {fileID: 948041365}
 --- !u!61 &2084952172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3905,6 +4043,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 3822840336716963124, guid: c386d3c0d492f7c4f9f2a76fba5cbdc5,
+        type: 3}
+      propertyPath: blockBreakerVFX
+      value: 
+      objectReference: {fileID: 948041365}
     - target: {fileID: 3822840336716963126, guid: c386d3c0d492f7c4f9f2a76fba5cbdc5,
         type: 3}
       propertyPath: m_LocalPosition.x
