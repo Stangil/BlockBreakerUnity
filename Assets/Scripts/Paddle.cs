@@ -7,16 +7,29 @@ public class Paddle : MonoBehaviour
     [SerializeField] float screenWidthInUnits = 16f;
     [SerializeField] float xMin = 1f;
     [SerializeField] float xMax = 15f;
-    void Start()
+    Ball ball;
+    GameState gameState;
+    private void Start()
     {
-        
+        ball = FindObjectOfType<Ball>();
+        gameState = FindObjectOfType<GameState>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        float xMousePosInUnits = Mathf.Clamp((Input.mousePosition.x / Screen.width * screenWidthInUnits),xMin, xMax);
-        Vector2 paddlePosition = new Vector2(xMousePosInUnits, transform.position.y);
+        Vector2 paddlePosition = new Vector2(transform.position.x, transform.position.y);
+        paddlePosition.x = Mathf.Clamp(GetXPos() ,xMin, xMax);
         transform.position = paddlePosition;
+    }
+
+    private float GetXPos()
+    {
+        if (gameState.IsAutoPlayEnabled())
+        {
+            return ball.transform.position.x;
+        }
+        else
+        {
+            return Input.mousePosition.x / Screen.width * screenWidthInUnits;
+        }
     }
 }
