@@ -9,13 +9,17 @@ public class Ball : MonoBehaviour
     [SerializeField] float launchBallX = 2f;
     [SerializeField] float launchBallY = 15f;
     [SerializeField] AudioClip bounceSound;
-    [SerializeField] AudioSource bounceSource;
+    AudioSource bounceSource;
+    [SerializeField] float randomFactor = 0.25f;
+    Rigidbody2D myRigidbody2D;
 
     Vector2 paddleToBallVector;
     bool hasStarted = false;
     void Start()
     {
+        bounceSource = GetComponent<AudioSource>();
         paddleToBallVector = transform.position - paddle1.transform.position;
+        myRigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -32,7 +36,7 @@ public class Ball : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             hasStarted = true;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(launchBallX, launchBallY);
+            myRigidbody2D.velocity = new Vector2(launchBallX, launchBallY);
         }
     }
 
@@ -43,9 +47,12 @@ public class Ball : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Bounce")|| collision.gameObject.CompareTag("Breakable") && hasStarted)
+        Vector2 velocityTweak = new Vector2(UnityEngine.Random.Range(0f, randomFactor), UnityEngine.Random.Range(0f, randomFactor));
+        
+        if (collision.gameObject.CompareTag("Bounce") || collision.gameObject.CompareTag("Breakable") && hasStarted)
         {
             bounceSource.PlayOneShot(bounceSound);
+            myRigidbody2D.velocity += velocityTweak;
         }
         
     }

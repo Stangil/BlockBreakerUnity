@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +7,11 @@ public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip audioClipBreak;
     [SerializeField] GameObject blockBreakerVFX;
-    [SerializeField] int maxHits = 1;
-
+    [SerializeField] Sprite[] hitSprites; 
     Level level;
     GameState gameState;
-    [SerializeField] int timesHit; //TODO For viewing in game editor only
+    //[SerializeField] //TODO For viewing in game editor only
+    int timesHit; 
     private void Start()
     {
         level = FindObjectOfType<Level>();
@@ -30,11 +31,34 @@ public class Block : MonoBehaviour
     {
         if (tag == "Breakable")
         {
-            timesHit++;
-            if(timesHit >= maxHits)
-            {
-                DestroyBlock();
-            }
+            HandleHit();
+        }
+    }
+
+    private void HandleHit()
+    {
+        timesHit++;
+        int maxHits = hitSprites.Length + 1;
+        if (timesHit >= maxHits)
+        {
+            DestroyBlock();
+        }
+        else
+        {
+            ShowNextHitSprite();        
+        }
+    }
+
+    private void ShowNextHitSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        if (hitSprites[spriteIndex] != null)
+        {
+            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
+        }
+        else
+        {
+            Debug.LogError("Block sprite is missing  from array"+ gameObject.name);
         }
     }
 

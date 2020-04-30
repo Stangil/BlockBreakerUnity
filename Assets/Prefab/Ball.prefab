@@ -139,6 +139,8 @@ MonoBehaviour:
   launchBallY: 10
   bounceSound: {fileID: 8300000, guid: 2bebb7da3c9d87246b3f5f1c391417ce, type: 3}
   bounceSource: {fileID: 124374278}
+  randomFactor: 0.25
+  rigidbody2D: {fileID: 2383515612290879448}
 --- !u!82 &124374278
 AudioSource:
   m_ObjectHideFlags: 0
