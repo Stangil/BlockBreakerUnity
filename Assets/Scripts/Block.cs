@@ -6,26 +6,50 @@ public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip audioClipBreak;
     [SerializeField] GameObject blockBreakerVFX;
+    [SerializeField] int maxHits = 1;
+
     Level level;
     GameState gameState;
+    [SerializeField] int timesHit; //TODO For viewing in game editor only
     private void Start()
     {
-        gameState = FindObjectOfType<GameState>();
         level = FindObjectOfType<Level>();
-        level.AddBlock();
+        gameState = FindObjectOfType<GameState>();
+        CountBreakableBlocks();
     }
+
+    private void CountBreakableBlocks()
+    {
+        if (tag == "Breakable")
+        {
+            level.AddBlock();
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DestroyBlock();
+        if (tag == "Breakable")
+        {
+            timesHit++;
+            if(timesHit >= maxHits)
+            {
+                DestroyBlock();
+            }
+        }
     }
 
     private void DestroyBlock()
     {
         level.RemoveBlock();
         gameState.addToScore();
+        PlayDestroySound();
+        Destroy(gameObject);
+    }
+
+    private void PlayDestroySound()
+    {
         TriggerBlockBreakerVFX();
         AudioSource.PlayClipAtPoint(audioClipBreak, Camera.main.transform.position);
-        Destroy(gameObject);
     }
 
     private void TriggerBlockBreakerVFX()
